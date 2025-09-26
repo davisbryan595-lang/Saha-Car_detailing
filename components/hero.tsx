@@ -40,8 +40,8 @@ export function Hero() {
           priority
           className="object-cover"
         />
-        {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-tr from-background/90 via-background/70 to-background/50" />
+        {/* Softer overlay for readability */}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 py-28 text-center md:text-left">
