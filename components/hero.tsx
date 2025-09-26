@@ -31,7 +31,7 @@ export function Hero() {
 
   return (
     <section className="relative bg-background">
-      {/* Background Image */}
+      {/* Full Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/heroimage.jpg"
@@ -44,57 +44,40 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-tr from-background/90 via-background/70 to-background/50" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-4 py-14">
-        <div className="grid items-center gap-8 md:grid-cols-2">
-          {/* Left Content */}
-          <div>
-            <p className="text-xs uppercase tracking-widest text-muted-foreground">
-              Premium Mobile Detailing
-            </p>
-            <h1 className="text-pretty text-4xl md:text-5xl font-semibold mt-2">
-              We Shine With Details
-            </h1>
-            <p className="mt-4 leading-relaxed text-balance">
-              Premium car washing and detailing services at your convenience. From quick exterior washes to full interior
-              restorations and ceramic coatings — we keep your car looking its best.
-            </p>
-            <div className="mt-6 flex flex-col sm:flex-row gap-3">
-              <Link href="#contact">
-                <Button className="bg-primary text-primary-foreground">
-                  Book an Appointment
-                </Button>
-              </Link>
-              <Link href="#services">
-                <Button variant="outline">Explore Services</Button>
-              </Link>
-            </div>
-            <div className="mt-6 flex items-center gap-4 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/placeholder-user.jpg"
-                  alt="Customer"
-                  width={28}
-                  height={28}
-                  className="rounded-full"
-                />
-                <span>Trusted by local owners</span>
-              </div>
-              <span aria-hidden>•</span>
-              <span>Fully insured</span>
-            </div>
+      <div className="relative mx-auto max-w-6xl px-4 py-28 text-center md:text-left">
+        <p className="text-xs uppercase tracking-widest text-muted-foreground">
+          Premium Mobile Detailing
+        </p>
+        <h1 className="text-pretty text-4xl md:text-6xl font-semibold mt-2">
+          We Shine With Details
+        </h1>
+        <p className="mt-4 max-w-2xl leading-relaxed text-balance mx-auto md:mx-0">
+          Premium car washing and detailing services at your convenience. From quick exterior washes to
+          full interior restorations and ceramic coatings — we keep your car looking its best.
+        </p>
+        <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+          <Link href="#contact">
+            <Button className="bg-primary text-primary-foreground">
+              Book an Appointment
+            </Button>
+          </Link>
+          <Link href="#services">
+            <Button variant="outline">Explore Services</Button>
+          </Link>
+        </div>
+        <div className="mt-6 flex flex-col sm:flex-row items-center gap-4 text-sm text-muted-foreground justify-center md:justify-start">
+          <div className="flex items-center gap-2">
+            <Image
+              src="/placeholder-user.jpg"
+              alt="Customer"
+              width={28}
+              height={28}
+              className="rounded-full"
+            />
+            <span>Trusted by local owners</span>
           </div>
-
-          {/* Right Image */}
-          <div className="relative hidden md:block">
-            <div className="relative aspect-[4/3] rounded-lg border border-border overflow-hidden">
-              <Image
-                src="/interior-detailing-car-seats.jpg"
-                alt="Interior detailing in progress"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
+          <span aria-hidden className="hidden sm:inline">•</span>
+          <span>Fully insured</span>
         </div>
       </div>
     </section>
