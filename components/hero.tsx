@@ -68,7 +68,7 @@ export function Hero() {
         <div className="mt-6 flex flex-col sm:flex-row items-center gap-4 text-sm text-muted-foreground justify-center md:justify-start">
           <div className="flex items-center gap-2">
             <Image
-              src="/placeholder-user.jpg"
+              src="/heroimage.jpg"
               alt="Customer"
               width={28}
               height={28}
